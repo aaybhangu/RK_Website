@@ -1,0 +1,502 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Roboto+Slab:300,300i,400|Source+Sans+Pro:300,400,400i,700');
+/* Eric Meyer CSS reset begins */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* Eric Meyer CSS reset ends */
+/*
+* Body settings
+*/
+body{
+    
+    font-family:'Source Sans Pro','Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    min-width: 300px;
+	background-image:url("/images/-index-rk2.jpg");
+	background-repeat: no-repeat;
+	
+}
+/*
+* Header , h1 , h2, h3, h4 settings
+*/
+header{
+    width: 100%;
+    background:rgba(0, 0, 0, 0.5);
+    height: 110px;
+    position: fixed;
+    z-index: 999;
+}
+ h2{
+	 
+    font-family:'Roboto Slab','Source Sans Pro','Open Sans','Roboto';
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+} 
+h2:hover{
+    text-decoration: underline;
+    color: #e97c19;
+    cursor: pointer;
+}
+/*
+* Width Setting for all the contianers
+*/
+#Header_content,#about_me,#tutorial,#portfolio,#contact_form,footer {
+    
+   max-width: 960px;
+    margin: 0 auto;
+    color: #000; 
+}
+header h1 Img{
+    width: 45%;   
+	margin-top: -3%;
+    margin-left: -12%;
+    float: left;
+}
+
+h4{ 
+	font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+/**************************** Nav bar setting *****************************/
+nav{
+    display: block;
+}
+nav ul{
+    float:right;
+}
+nav li{
+    display: inline-block;
+}
+nav li a,#menu{
+   text-decoration: none;
+    padding-right: 10px;
+    line-height: 100px;
+    color: #fff;
+	font-weight: 600;
+}
+nav li a:hover{
+   text-decoration: none;
+    color: #e97c19;
+    text-decoration: underline;
+}
+
+#menu{
+    display: none;
+} 
+
+/*Slider Image Settings*/ 
+
+#slider_text{
+	position: absolute;
+    color: #fff;
+    top: 32%; 
+    font-size: 4vw;
+    font-weight: 500;
+    text-align: center;
+}
+.fullscreen-bg__video {
+    width: 100%;
+    height: 100%;
+}
+/*****about me page position and texting settings ****/
+#aboutme_title{
+    padding-left: 25%;
+}
+#about_me {
+    padding-bottom: 10%;
+}
+#aboutme_title img{
+	float: left;
+}
+#about_me h2{
+	 display: inline-block;
+    line-height: 152px;
+}
+#about_me_div article h3{
+	color: #e97c19;
+	font-weight: 600;
+}
+#about_me_div{
+    padding: 10px 0px 10px;
+}
+#about_me article h3{
+     font-size: 22px;
+    margin-bottom: 10px;
+}
+/*
+* Profile pic settings
+*/
+#profile_pic_container{
+    float: left;
+    margin-right: 25px;
+}
+#profile_pic_container ul{
+    position: relative;
+    top: -50px;
+}
+#profile_pic_container ul li{
+    float: left;
+    background: #e97b1a;
+    width: 250px;
+    height: 50px;
+} 
+#profile_pic_container ul li:hover{
+ background: #b4b4b4;
+}
+#profile_pic_container ul li a{
+    margin-left: 12%;
+}
+#profile_pic_container ul li img{
+   margin-top: 5%;
+}
+/*
+* Portfolio page settings
+*/
+#portfolio_background_contaianer,#contact_background_contaianer{
+    clear: both;
+    background: #eae8df;
+}
+#portfolio {
+    padding-top: 20px;
+    padding-bottom: 720px;
+}
+#portfolio ul{
+     
+}
+#portfolio ul li{
+  float: left;
+    padding: 8% 1% 0% 1%;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+}
+/*
+* Tutorial Page settings
+*/
+#tutorial {
+      
+     padding-top: 7%;
+     padding-bottom: 4%;
+}
+#tutorial h2{
+    text-align: left;
+}
+#tutorial #tutorial_bar {
+    width: 65%;
+    float: left;
+}
+#article_date{
+    clear: both;
+    background: #e97b1a;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+#article_date h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 3px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+#article_date p{
+    font-size: 15px;
+    font-weight: 100;  
+    line-height: 10px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+#article_added_by h3{ 
+    color: #a4a5a7; 
+}
+#article_added_by h3, #article_added_by p{
+    line-height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+}
+#tutorial #tutorial_bar article{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+#tag_bar article {
+    padding-top: 15%;
+	padding-bottom: 15%;
+}
+#tutorial #tag_bar {
+    float: left;
+    width: 32%;
+    margin-left: 20px;
+}
+
+#tutorial #tag_bar article {
+    width: 100%;
+}
+#tutorial_article_img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+} 
+/*
+* Contact me page Settings
+*/
+#contact_form {
+    padding-top: 20px;
+    padding-bottom: 600px;
+    
+}
+#contact_form form{
+    float: left;
+	width: 50%;
+}
+
+#contact_form form textarea{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact_form form label,input,textarea{
+    width: 100%;
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	font-weight: 600;
+	display: inline-block;
+}
+#contact_form #last_logos{
+    float: left;
+    width: 285px;
+    margin-left: 2%;
+    margin-top: 5%;
+} 
+#contact_form dl dt{
+    padding-top: 5%;
+	font-weight: 600;
+}
+#last_logos ul{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+#last_logos li a{
+ margin-right: 5%;
+}
+#contact_form form #submitBtn{
+     
+	background-color: #e97c19;
+    width: 25%;
+    height: 40px;
+} 
+/******************** Image veiwer Settings ************************/
+.full_Size_Img_Container_Show{
+     display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;    
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+     transition: opacity 1s ease-in-out;
+}
+.full_Size_Img_Container_Hide{
+    display: none;
+    
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+     transition: opacity 1s ease-in-out;
+}
+#full_Size_Container img{
+    margin: 5vw 5vw; 
+     width: 85%;
+} 
+.close_btn{
+	width: 60px;
+    position: absolute;
+    top: -70px;
+    right: -55px;
+}
+footer{
+	text-align: center;
+}
+
+/*
+* Media Query setting after 1000px width
+*/
+@media only screen and (max-width:1000px){
+	main{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	header h1 Img {
+		width: 425px;
+		margin-top: -3%;
+		margin-left: -10%;
+		float: left;
+   }
+}
+/*
+* Media Query setting after 800px width
+*/
+@media only screen and (max-width:800px){
+   
+/*
+* Header setting after 800px width
+*/
+  header { 
+    height: 80px; 
+   }
+	
+  header h1 Img{
+		width: 240px;
+		margin-top: 0%;
+		margin-left: -5%;
+		float: left;
+    }
+/*
+* Ham Burger Menu Settings    
+*/
+    #menu{
+        display: block;
+        float: right;
+    }
+    #show-menu{
+        display: block;
+    }
+    #hide-menu{
+        display: none;
+        position: fixed;
+        right: 52px; 
+        
+    } 
+    #menu img{
+        width: 50px;
+        padding-top: 20px;
+    }
+    nav{
+        width:150px;
+        background: #000;
+        text-align: center;
+        display: none;
+        float: right;
+    }  
+    nav ul{
+       display: inline-block;
+        margin-top: 60px;
+    }
+    nav li a{
+        text-align: center;
+        line-height: 60px;
+    }
+    nav li{
+        display: block;
+        text-align: center;
+        padding: 0px 25px;
+    }
+/*
+*  Slider section settings
+*/
+	
+	#slider_text{
+		position: absolute;
+		color: #fff;
+		top: 20%;
+		/* left: -2%; */
+		font-size: 4vw;
+		font-weight: 500;
+		text-align: center;
+	}
+/*
+* Tutorial page settings
+*/
+    #tutorial #tutorial_bar{
+        width: 100%;
+    } 
+   #tutorial #tag_bar{
+           width: 100%;
+    }
+/*
+* Portfolio page settings
+*/
+    #portfolio_background_contaianer,#contact_background_contaianer{
+     
+        background: #fff;
+    }
+/*
+* Contact Page setting
+*/    
+    
+    #contact_form form {
+        
+        width: 100%;
+    }
+    #contact_form #last_logos{
+        
+        width: 100%;
+    } 
+}
+
+@media only screen and (max-width: 500px)
+{
+/*
+* Header H1 Image setting
+*/    
+	header h1 Img{
+		width: 200px;
+		margin-top: -1%;
+		margin-left: -10%;
+		float: left;
+	}
+/*
+* Slider Text settings
+*/
+	#slider_text{
+		position: absolute;
+		color: #fff;
+		top: 15%;
+		/* left: -2%; */
+		font-size: 4vw;
+		font-weight: 500;
+		text-align: center;
+	   } 
+/*
+*  Main Tag Setting
+*/
+	main {
+     padding-left: 5%;  
+     padding-right: 5%;  
+	}
+    
+/*
+* Portfolio page settings
+*/
+	#portfolio ul li,#tag_bar_img { 
+		width: 100%; 
+	}
+
+/*
+* Tutorial page settings
+*/    
+	#tutorial #tag_bar {
+    margin-left: 0px;
+  }
+/*
+* H2 page settings
+*/
+	h2{
+		font-size: 35px;
+	}
+/*
+* Contact Page setting
+*/
+	#aboutme_title {
+    padding-left: 0%;
+  }
+}
